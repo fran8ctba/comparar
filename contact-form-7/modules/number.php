@@ -81,10 +81,10 @@ function wpcf7_number_form_tag_handler( $tag ) {
 
 /* Validation filter */
 
-add_filter( 'wpcf7_validate_number', 'wpcf7_number_validation_filter', 10, 2 );
-add_filter( 'wpcf7_validate_number*', 'wpcf7_number_validation_filter', 10, 2 );
-add_filter( 'wpcf7_validate_range', 'wpcf7_number_validation_filter', 10, 2 );
-add_filter( 'wpcf7_validate_range*', 'wpcf7_number_validation_filter', 10, 2 );
+add_filter( 'wpcf7_validate_number', 'wpcf7_number_validation_filter', 12, 2 );
+add_filter( 'wpcf7_validate_number*', 'wpcf7_number_validation_filter', 12, 2 );
+add_filter( 'wpcf7_validate_range', 'wpcf7_number_validation_filter', 12, 2 );
+add_filter( 'wpcf7_validate_range*', 'wpcf7_number_validation_filter', 12, 2 );
 
 function wpcf7_number_validation_filter( $result, $tag ) {
 	$name = $tag->name;
